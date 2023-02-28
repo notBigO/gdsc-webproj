@@ -21,6 +21,7 @@ const Cta = () => {
         >
           <a
             href="https://gdsc.community.dev/mvj-college-of-engineering-bengaluru/"
+            className=""
             target="_blank"
           >
             Become a member
