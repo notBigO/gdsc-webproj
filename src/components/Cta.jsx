@@ -19,7 +19,10 @@ const Cta = () => {
           className="p-3 px-3 sm:px-2 lg:px-3 text-white hover:bg-[#F4B400] bg-[#DB4437] ease-in-out duration-200 rounded-full baseline"
           data-aos="fade-right"
         >
-          <a href="https://gdsc.community.dev/mvj-college-of-engineering-bengaluru/">
+          <a
+            href="https://gdsc.community.dev/mvj-college-of-engineering-bengaluru/"
+            target="_blank"
+          >
             Become a member
           </a>
         </button>
