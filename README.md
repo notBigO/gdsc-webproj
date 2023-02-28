@@ -5,15 +5,15 @@ A website introducing the GDSC club.
 ## Features
 
 - Fully Responsive
-- Working Feedback/Contact form (No longer working due to API depreciation)
-- Return email sent confirming form submission. (No longer working due to API depreciation)
+- Working Feedback/Contact form
+- Return email sent confirming form submission.
 - Teams page to introduce the different teams in the club
 - A community page redirecting to the the official GDSC page introducing the current members of the club
 - A contact page to take in feedback or be in touch with the GDSC team functionality.
 
 ## Tech Stack
 
-**Client:** React, TailwindCSS, EmailJS (No longer working due to API depreciation)
+**Client:** React, TailwindCSS, EmailJS
 
 ## Packages
 
