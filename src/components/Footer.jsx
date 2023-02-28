@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/gdsc-logo.png";
 import { AiOutlineInstagram, AiFillLinkedin, BsDiscord } from "react-icons/all";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,15 +27,22 @@ const Footer = () => {
         </div>
         <div className="flex justify-around space-x-32">
           <div className="flex flex-col space-y-3 text-black md:flex-row md:items-center md:justify-center md:space-y-0 md:space-x-12">
-            <a href="/" className="hover:text-[#4285F4]">
+            <NavLink to="/" className="hover:text-[#4285F4]">
               Home
-            </a>
-            <a href="" className="hover:text-[#4285F4]">
+            </NavLink>
+            <NavLink to="/teams" className="hover:text-[#DB4437]">
               Teams
-            </a>
-            <a href="" className="hover:text-[#4285F4]">
+            </NavLink>
+            <NavLink
+              to="https://gdsc.community.dev/mvj-college-of-engineering-bengaluru/"
+              className="hover:text-[#F4B400]"
+              target="_blank"
+            >
               Community
-            </a>
+            </NavLink>
+            <NavLink to="/query" className="hover:text-[#4285F4]">
+              Contact
+            </NavLink>
           </div>
         </div>
       </div>
