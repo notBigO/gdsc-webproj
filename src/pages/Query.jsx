@@ -2,32 +2,12 @@ import React, { useRef, useState } from "react";
 import Image from "../assets/login-page.jpeg";
 import LoginIMG from "../assets/login-gdsc.png";
 import { AiOutlineInstagram, AiFillLinkedin, BsDiscord } from "react-icons/all";
-// import emailjs from "@emailjs/browser";
-// import { useNavigate } from "react-router";
 
 const Query = () => {
-  // const form = useRef();
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   emailjs.sendForm().then(
-  //     (result) => {
-  //       console.log(result.text);
-  //       alert(
-  //         "Form submitted. We'll send you an email confirming your submission. Don't forget to check!"
-  //       );
-  //     },
-  //     (error) => {
-  //       console.log(error.text);
-  //     }
-  //   );
-  // };
-
   return (
     <>
       <section className="bg-gray-50 min-h-screen flex items-center justify-center">
-        {/* Login */}
         <div className="bg-gray-100 flex rounded-[50px] shadow-lg max-w-7xl p-5">
-          {/* Form */}
           <div className="md:w-1/2 px-16 flex flex-col justify-center">
             <div className="flex gap-4 items-center">
               <h2 className="font-bold text-2xl">Have Questions?</h2>
@@ -36,10 +16,7 @@ const Query = () => {
 
             <p className="text-sm mt-4">Fill out the form below</p>
 
-            <form
-              className="flex flex-col gap-4"
-              // onSubmit={useNavigate("")}
-            >
+            <form className="flex flex-col gap-4">
               <input
                 className="p-2 mt-8 rounded-xl border"
                 type="text"
@@ -96,7 +73,7 @@ const Query = () => {
               <p className="mt-5 text-xs text-[#4285F4]">Go Home</p>
             </a>
           </div>
-          {/* Right */}
+
           <div className="md:flex hidden w-1/2">
             <img src={Image} className="rounded-[50px]" alt="" />
           </div>

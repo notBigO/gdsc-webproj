@@ -47,13 +47,12 @@ const Navbar = () => {
           >
             Community
           </NavLink>
-          <NavLink
-            to="/query"
+          <a
+            href="/query"
             className="hover:text-[#F4B400] ease-in-out duration-200"
-            target="_blank"
           >
             Contact
-          </NavLink>
+          </a>
         </div>
         <button className="hidden md:block bg-[#4285F4] hover:bg-[#0F9D58] ease-in-out duration-200 text-white py-1 px-3 rounded-[50px] lg:py-3 lg:px-6">
           <Link
