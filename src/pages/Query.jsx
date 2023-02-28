@@ -2,8 +2,34 @@ import React, { useRef, useState } from "react";
 import Image from "../assets/login-page.jpeg";
 import LoginIMG from "../assets/login-gdsc.png";
 import { AiOutlineInstagram, AiFillLinkedin, BsDiscord } from "react-icons/all";
+import emailjs from "@emailjs/browser";
 
 const Query = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_np0aicq",
+        "template_2ux4vsr",
+        form.current,
+        "DmesS0DijMxu3ZQbV"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    alert(
+      "Form Submitted. An email has been sent to you confirming form submission."
+    );
+  };
   return (
     <>
       <section className="bg-gray-50 min-h-screen flex items-center justify-center">
@@ -16,7 +42,11 @@ const Query = () => {
 
             <p className="text-sm mt-4">Fill out the form below</p>
 
-            <form className="flex flex-col gap-4">
+            <form
+              className="flex flex-col gap-4"
+              ref={form}
+              onSubmit={sendEmail}
+            >
               <input
                 className="p-2 mt-8 rounded-xl border"
                 type="text"
