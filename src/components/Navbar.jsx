@@ -48,7 +48,7 @@ const Navbar = () => {
             Community
           </NavLink>
           <a
-            href="/query"
+            href="/contact"
             className="hover:text-[#F4B400] ease-in-out duration-200"
           >
             Contact
