@@ -2,35 +2,25 @@ import React, { useRef, useState } from "react";
 import Image from "../assets/login-page.jpeg";
 import LoginIMG from "../assets/login-gdsc.png";
 import { AiOutlineInstagram, AiFillLinkedin, BsDiscord } from "react-icons/all";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
+// import { useNavigate } from "react-router";
 
 const Query = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        // process.env.REACT_APP_SERVICE_ID,
-        // process.env.REACT_APP_TEMPLATE_ID,
-        // form.current,
-        // process.env.REACT_APP_PUBLIC_ID
-        "service_s0htwaw",
-        "template_2ux4vsr",
-        form.current,
-        "DmesS0DijMxu3ZQbV"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert(
-            "Form submitted. We'll send you an email confirming your submission. Don't forget to check!"
-          );
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  // const form = useRef();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   emailjs.sendForm().then(
+  //     (result) => {
+  //       console.log(result.text);
+  //       alert(
+  //         "Form submitted. We'll send you an email confirming your submission. Don't forget to check!"
+  //       );
+  //     },
+  //     (error) => {
+  //       console.log(error.text);
+  //     }
+  //   );
+  // };
 
   return (
     <>
@@ -47,9 +37,8 @@ const Query = () => {
             <p className="text-sm mt-4">Fill out the form below</p>
 
             <form
-              ref={form}
               className="flex flex-col gap-4"
-              onSubmit={sendEmail}
+              // onSubmit={useNavigate("")}
             >
               <input
                 className="p-2 mt-8 rounded-xl border"
